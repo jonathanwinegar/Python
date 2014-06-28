@@ -8,6 +8,7 @@ text = open(filename)
 
 print "Here is your file %r: " % filename
 print text.read()
+text.close()
 
 print "Type the filename again:"
 file_again = raw_input("> ")
@@ -15,5 +16,5 @@ file_again = raw_input("> ")
 text_again = open(file_again)
 
 print text_again.read()
-
+text_again.close()
 
